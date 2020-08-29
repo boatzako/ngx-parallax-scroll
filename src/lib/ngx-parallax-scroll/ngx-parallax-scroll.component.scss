@@ -1,0 +1,22 @@
+.parallax-container {
+    position: relative;
+    height: 500px;
+
+    .parallax {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        overflow: hidden;
+
+        ::ng-deep img {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+}
